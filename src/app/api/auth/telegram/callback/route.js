@@ -1,10 +1,6 @@
 import { NextResponse } from "next/server";
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
+export const runtime = 'edge'; // Optional: Use edge runtime if needed
 
 export async function GET(req) {
   const url = new URL(req.url);
